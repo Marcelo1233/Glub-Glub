@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../dados_cadastrados/dados_cadastrados.dart';
+import 'dados_cadastrados.dart';
 
 class Login extends StatelessWidget {
   @override
