@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../dados_cadastrados/dados_cadastrados.dart';
+
 class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -86,7 +88,10 @@ class Login extends StatelessWidget {
                               color: Color.fromARGB(255, 0, 0, 0),
                               fontWeight: FontWeight.bold),
                         ),
-                        onPressed: () {},
+                        onPressed: () {Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => DadosCadastrados()));},
                         style: ElevatedButton.styleFrom(
                           primary: const Color.fromARGB(255, 26, 185, 224),
                           padding: const EdgeInsets.symmetric(

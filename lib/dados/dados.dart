@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:glub/dados_cadastrados/dados_cadastrados.dart';
 
 class Dados extends StatelessWidget {
   final dropValue = ValueNotifier('');
@@ -233,7 +234,10 @@ class Dados extends StatelessWidget {
                             color: Color.fromARGB(255, 0, 0, 0),
                             fontWeight: FontWeight.bold),
                       ),
-                      onPressed: () {},
+                      onPressed: () { Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => DadosCadastrados()));},
                       style: ElevatedButton.styleFrom(
                         primary: const Color.fromARGB(255, 26, 185, 224),
                         padding: const EdgeInsets.symmetric(
