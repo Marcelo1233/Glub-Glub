@@ -38,69 +38,74 @@ class Login extends StatelessWidget {
                     ],
                   ),
                 ),
-                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                  const Align(),
-                  Container(
-                    width: 350,
-                    child: TextFormField(
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: const InputDecoration(
-                        labelText: "E-mail",
-                        labelStyle: TextStyle(
-                          color: Colors.black38,
-                          fontWeight: FontWeight.w400,
-                          fontSize: 20,
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Align(),
+                    Container(
+                      width: 350,
+                      child: TextFormField(
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: const InputDecoration(
+                          labelText: "E-mail",
+                          labelStyle: TextStyle(
+                            color: Colors.black38,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 20,
+                          ),
                         ),
+                        style: const TextStyle(fontSize: 20),
                       ),
-                      style: const TextStyle(fontSize: 20),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Container(
-                    width: 350,
-                    child: TextFormField(
-                      keyboardType: TextInputType.text,
-                      obscureText: true,
-                      decoration: const InputDecoration(
-                        labelText: "Senha",
-                        labelStyle: TextStyle(
-                          color: Colors.black38,
-                          fontWeight: FontWeight.w400,
-                          fontSize: 20,
-                        ),
-                      ),
-                      style: const TextStyle(fontSize: 20),
+                    const SizedBox(
+                      height: 10,
                     ),
-                  ),
-                  const SizedBox(
-                    height: 40,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      ElevatedButton(
-                        child: const Text(
-                          "Proximo",
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Color.fromARGB(255, 0, 0, 0),
-                              fontWeight: FontWeight.bold),
+                    Container(
+                      width: 350,
+                      child: TextFormField(
+                        keyboardType: TextInputType.text,
+                        obscureText: true,
+                        decoration: const InputDecoration(
+                          labelText: "Senha",
+                          labelStyle: TextStyle(
+                            color: Colors.black38,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 20,
+                          ),
                         ),
-                        onPressed: () {Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => DadosCadastrados()));},
-                        style: ElevatedButton.styleFrom(
-                          primary: const Color.fromARGB(255, 26, 185, 224),
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 105, vertical: 15),
-                        ),
+                        style: const TextStyle(fontSize: 20),
                       ),
-                    ],
-                  ),
-                ]),
+                    ),
+                    const SizedBox(
+                      height: 40,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        ElevatedButton(
+                          child: const Text(
+                            "Proximo",
+                            style: TextStyle(
+                                fontSize: 18,
+                                color: Color.fromARGB(255, 0, 0, 0),
+                                fontWeight: FontWeight.bold),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DadosCadastrados()));
+                          },
+                          style: ElevatedButton.styleFrom(
+                            primary: const Color.fromARGB(255, 26, 185, 224),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 105, vertical: 15),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
                 const SizedBox(
                   height: 40,
                 ),
