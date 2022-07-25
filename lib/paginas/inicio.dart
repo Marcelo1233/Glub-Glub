@@ -96,10 +96,12 @@ class Inicio extends StatelessWidget {
                                 color: Color.fromARGB(255, 0, 0, 0),
                                 fontWeight: FontWeight.bold),
                           ),
-                          onPressed: () {Navigator.push(
+                          onPressed: () {
+                            Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Login()));},
+                                    builder: (context) => Login()));
+                          },
                           style: ElevatedButton.styleFrom(
                             primary: const Color.fromARGB(255, 26, 185, 224),
                             padding: const EdgeInsets.symmetric(
@@ -115,11 +117,13 @@ class Inicio extends StatelessWidget {
                 ),
                 const Text(
                   "Melhor encontrar pedras no caminho\n                 do que nos rins\n                      beba água",
-                  style: TextStyle(color: Color.fromARGB(255, 0, 0, 0),fontWeight: FontWeight.w300,
-                          fontSize: 15,),
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontWeight: FontWeight.w300,
+                    fontSize: 15,
+                  ),
                 ),
               ],
-              
             ),
           ),
         ),

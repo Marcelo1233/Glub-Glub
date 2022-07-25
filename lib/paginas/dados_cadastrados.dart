@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:glub/paginas/inicio_app.dart';
+
 class DadosCadastrados extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -50,24 +51,25 @@ class DadosCadastrados extends StatelessWidget {
                           Image.asset(
                             'assets/images/cadastro.png',
                             width: 500,
-                          ), Stack(
-                    children: <Widget>[
-                      Positioned(
-                        child: (Container(
-                          margin: const EdgeInsets.only(top: 0),
-                          child: const Center(
-                            child: Text(
-                              "x ml de água ",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
-                            ),
                           ),
-                        )),
-                      ),
-                    ],
-                  ),
+                          Stack(
+                            children: <Widget>[
+                              Positioned(
+                                child: (Container(
+                                  margin: const EdgeInsets.only(top: 0),
+                                  child: const Center(
+                                    child: Text(
+                                      "x ml de água ",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                )),
+                              ),
+                            ],
+                          ),
                           const SizedBox(
                             height: 40,
                           ),
@@ -91,10 +93,11 @@ class DadosCadastrados extends StatelessWidget {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {Navigator.push(
-           context,
-          MaterialPageRoute(
-         builder: (context) => InicioApp()));},tooltip: 'Próxima tela',
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => InicioApp()));
+          },
+          tooltip: 'Próxima tela',
           child: const Icon(Icons.arrow_right_alt),
         ),
       ),
